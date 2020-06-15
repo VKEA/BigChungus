@@ -29,9 +29,10 @@ export default {
       'Big Chonker',
       'Big Chungus',
       'Big Chuggus',
-      'Wing Chungus Kung Fu',
+      'Wing Chungus',
       'Extra Large Chungus',
-      'Chungous Humongous'
+      'Chungous Humongous',
+      'Yoshikage Chungus'
     ]
     const name = names[Math.floor(Math.random() * names.length)]
     return {
