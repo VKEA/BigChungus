@@ -72,6 +72,9 @@ li {
 a {
   color: #42b983;
 }
+img {
+  height:250px;
+}
 .keep-chungus-contained {
   max-width: 100%;
   height: 300px;
