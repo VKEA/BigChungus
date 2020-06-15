@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/Big_Chungus.png">
     <BigChungus msg="Hello "/>
   </div>
 </template>
@@ -24,10 +23,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-img {
-  width: 200px;
 }
 </style>
 
