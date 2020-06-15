@@ -44,7 +44,10 @@ export default {
       'Wing Chungus',
       'Extra Large Chungus',
       'Chungous Humongous',
-      'Yoshikage Chungus'
+      'Yoshikage Chungus',
+      'Chungus-chan!!',
+      'World Chungus',
+      'Lorem Chungus'
     ]
     const name = names[Math.floor(Math.random() * names.length)]
     const width = this.getWidth(name)
@@ -74,6 +77,7 @@ a {
 }
 img {
   height:250px;
+  transition: width .5s;
 }
 .keep-chungus-contained {
   max-width: 100%;
