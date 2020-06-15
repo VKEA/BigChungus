@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BigImage img="https://vignette.wikia.nocookie.net/david-and-friends/images/c/c4/Big_Chungus.png/revision/latest?cb=20190516074316"/>
+    <BigChungus msg="Hello " name="Big Chungus"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BigChungus from './components/BigChungus.vue'
+import BigImage from './components/BigImage.vue' 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BigChungus,
+    BigImage
   }
 }
 </script>
