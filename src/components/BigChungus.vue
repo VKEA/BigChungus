@@ -6,11 +6,24 @@
 </template>
 
 <script>
+
 export default {
   name: 'BigChungus',
   props: {
-    msg: String,
-    name: String
+    msg: String
+  },
+  data () {
+    const names = [
+      'Big Chugnus',
+      'Grote Stukkus',
+      'Big Chonker',
+      'Big Chungus',
+      'Big Chuggus'
+    ]
+    const name = names[Math.floor(Math.random() * names.length)]
+    return {
+      name: name
+    }
   }
 }
 </script>
