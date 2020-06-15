@@ -19,16 +19,19 @@ export default {
     msg: String
   },
   methods: {
+    getWidth: function (name) {
+      return name.length * 20 + 'px'
+    },
     random: function () {
       const names = this.names
       const name = names[Math.floor(Math.random() * names.length)]
 
-      this.$refs.chungusName.value = name
-      this.$refs.chungusImage.style.width = this.name.length * 20 + 'px'
       this.name = name
+      this.$refs.chungusName.value = this.name
+      this.$refs.chungusImage.style.width = this.getWidth(this.name)
     },
     resize: function () {
-      this.$refs.chungusImage.style.width = this.$refs.chungusName.value.length* 20 + 'px'
+      this.$refs.chungusImage.style.width = this.getWidth(this.name)
     }
   },
   data () {
@@ -44,7 +47,7 @@ export default {
       'Yoshikage Chungus'
     ]
     const name = names[Math.floor(Math.random() * names.length)]
-    const width = name.length * 20 + 'px'
+    const width = this.getWidth(name)
     return {
       names: names,
       name: name,
