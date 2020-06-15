@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <BigImage img="https://vignette.wikia.nocookie.net/david-and-friends/images/c/c4/Big_Chungus.png/revision/latest?cb=20190516074316"/>
+    <img alt="Vue logo" src="./assets/Big_Chungus.png">
     <BigChungus msg="Hello "/>
   </div>
 </template>
 
 <script>
 import BigChungus from './components/BigChungus.vue'
-import BigImage from './components/BigImage.vue'
 
 export default {
   name: 'App',
   components: {
-    BigChungus,
-    BigImage
+    BigChungus
   }
 }
 </script>
@@ -27,4 +25,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+img {
+  width: 200px;
+}
 </style>
+
